@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D547DD181E79F6FC002FDE97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DD171E79F6FC002FDE97 /* AppDelegate.swift */; };
-		D547DD1A1E79F6FC002FDE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DD191E79F6FC002FDE97 /* ViewController.swift */; };
 		D547DD1D1E79F6FC002FDE97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D547DD1B1E79F6FC002FDE97 /* Main.storyboard */; };
 		D547DD1F1E79F6FC002FDE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D547DD1E1E79F6FC002FDE97 /* Assets.xcassets */; };
 		D547DD221E79F6FC002FDE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D547DD201E79F6FC002FDE97 /* LaunchScreen.storyboard */; };
+		D547DD2E1E79F78F002FDE97 /* SmileyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DD2D1E79F78F002FDE97 /* SmileyVC.swift */; };
+		D547DD301E79F79F002FDE97 /* Smiley.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DD2F1E79F79F002FDE97 /* Smiley.swift */; };
+		D547DD321E79FC09002FDE97 /* SmileyBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DD311E79FC09002FDE97 /* SmileyBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D547DD141E79F6FC002FDE97 /* DroppingSmiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroppingSmiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D547DD171E79F6FC002FDE97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D547DD191E79F6FC002FDE97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D547DD1C1E79F6FC002FDE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D547DD1E1E79F6FC002FDE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D547DD211E79F6FC002FDE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D547DD231E79F6FC002FDE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D547DD2D1E79F78F002FDE97 /* SmileyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyVC.swift; sourceTree = "<group>"; };
+		D547DD2F1E79F79F002FDE97 /* Smiley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smiley.swift; sourceTree = "<group>"; };
+		D547DD311E79FC09002FDE97 /* SmileyBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		D547DD161E79F6FC002FDE97 /* DroppingSmiley */ = {
 			isa = PBXGroup;
 			children = (
-				D547DD171E79F6FC002FDE97 /* AppDelegate.swift */,
-				D547DD191E79F6FC002FDE97 /* ViewController.swift */,
 				D547DD1B1E79F6FC002FDE97 /* Main.storyboard */,
+				D547DD2C1E79F73C002FDE97 /* Modal */,
+				D547DD2B1E79F737002FDE97 /* View */,
+				D547DD2A1E79F730002FDE97 /* Controller */,
+				D547DD291E79F727002FDE97 /* Supporting Files */,
+			);
+			path = DroppingSmiley;
+			sourceTree = "<group>";
+		};
+		D547DD291E79F727002FDE97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D547DD171E79F6FC002FDE97 /* AppDelegate.swift */,
 				D547DD1E1E79F6FC002FDE97 /* Assets.xcassets */,
 				D547DD201E79F6FC002FDE97 /* LaunchScreen.storyboard */,
 				D547DD231E79F6FC002FDE97 /* Info.plist */,
 			);
-			path = DroppingSmiley;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D547DD2A1E79F730002FDE97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D547DD2D1E79F78F002FDE97 /* SmileyVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D547DD2B1E79F737002FDE97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D547DD2F1E79F79F002FDE97 /* Smiley.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D547DD2C1E79F73C002FDE97 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D547DD311E79FC09002FDE97 /* SmileyBehavior.swift */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D547DD1A1E79F6FC002FDE97 /* ViewController.swift in Sources */,
 				D547DD181E79F6FC002FDE97 /* AppDelegate.swift in Sources */,
+				D547DD301E79F79F002FDE97 /* Smiley.swift in Sources */,
+				D547DD321E79FC09002FDE97 /* SmileyBehavior.swift in Sources */,
+				D547DD2E1E79F78F002FDE97 /* SmileyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
